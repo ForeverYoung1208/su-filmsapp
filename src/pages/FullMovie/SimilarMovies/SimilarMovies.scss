@@ -1,0 +1,27 @@
+@import '../../../shared/styles/variables.scss';
+
+.similar-movies {
+  position: relative;
+  z-index: 1;
+  max-width: 15rem;
+  width: 100%;
+
+  &__list-item {
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+
+  &__link {
+    &:focus {
+      outline-color: $orange-border;
+    }
+  }
+}

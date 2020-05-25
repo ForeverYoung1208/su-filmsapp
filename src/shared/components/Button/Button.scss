@@ -1,0 +1,74 @@
+@import '../../styles/variables.scss';
+
+.button {
+  display: block;
+  border: none;
+  font-size: 1.6rem;
+  font-family: $font;
+  padding: 1.1rem 3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  outline: none;
+  transition:
+    background-color 200ms ease,
+    color 200ms ease,
+    box-shadow 200ms ease;
+
+  &--orange {
+    background-color: $orange-bg;
+    box-shadow: 0 .5rem 1.2rem rgba($orange-bg, .7);
+    color: $white-text;
+
+    &:hover {
+      background-color: darken($orange-bg, 5%);
+    }
+
+    &:focus {
+      box-shadow:
+        0 .5rem 1.2rem rgba($orange-bg, .7),
+        inset 0 0 0 .5rem $orange-border,
+        inset 0 0 0 .65rem $white-border;
+    }
+  }
+
+  &--blue {
+    background-color: $blue-bg;
+    box-shadow: 0 .5rem 1.2rem rgba($blue-bg, .4);
+    color: $white-text;
+
+    &:hover {
+      background-color: darken($blue-bg, 5%);
+    }
+
+    &:focus {
+      box-shadow:
+        0 .5rem 1.2rem rgba($blue-bg, .4),
+        inset 0 0 0 .5rem $blue-border,
+        inset 0 0 0 .65rem $white-border;
+    }
+  }
+
+  &--red {
+    background-color: $red-bg;
+    box-shadow: 0 .5rem 1.2rem rgba($red-bg, .4);
+    color: $white-text;
+
+    &:hover {
+      background-color: darken($red-bg, 5%);
+    }
+
+    &:focus {
+      box-shadow:
+        0 .5rem 1.2rem rgba($red-bg, .4),
+        inset 0 0 0 .5rem $red-border,
+        inset 0 0 0 .65rem $white-border;
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: rgba($grey-bg, .15);
+    color: $grey-text;
+    box-shadow: 0 .5rem 1.2rem rgba($grey-bg, .3);
+  }
+}

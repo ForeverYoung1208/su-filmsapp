@@ -1,0 +1,101 @@
+@import '../../shared/styles/variables.scss';
+
+.favorite-movies {
+  padding: 2.5rem;
+  width: 100%;
+
+  &__table {
+    border-spacing: 0;
+    width: 100%;
+    background-color: $lightgrey-bg;
+    border-radius: 1rem;
+    box-shadow: 0 .8rem 1.5rem rgba($black-bg, .2);
+  }
+
+  &__tr {
+    &:last-child {
+      .favorite-movies__td {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__th,
+  &__td {
+    padding: 1.5rem 2.5rem;
+  }
+
+  &__th {
+    background-color: $black-bg;
+    color: $white-text;
+
+    &:first-child {
+      border-radius: 1rem 0 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 1rem 0 0;
+    }
+
+    &--overview {
+      max-width: 50rem;
+    }
+  }
+
+  &__td {
+    text-align: center;
+    border-bottom: .1rem dashed $black-border;
+
+    &--overview {
+      max-width: 50rem;
+      text-align: left;
+    }
+  }
+
+  &__link {
+    color: $black-text;
+
+    &:hover {
+      text-decoration: none;
+
+      .favorite-movies__icon,
+      .favorite-movies__text {
+        color: $blue-text;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: 1rem;
+    font-size: 1.8rem;
+    position: relative;
+    top: .1rem;
+    transition: color 200ms ease;
+  }
+
+  &__text {
+    font-family: $font-numbers;
+    transition: color 200ms ease;
+  }
+
+  &__img-wrapper {
+    max-width: 15rem;
+    margin: 0 auto;
+    box-shadow: 0 .5rem 1.2rem rgba($black-bg, .5);
+    border-radius: .8rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    border-radius: .8rem;
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+
+  &__pagination {
+    margin-top: 3rem;
+  }
+}
