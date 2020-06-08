@@ -89,9 +89,9 @@ class FullMovie extends Component {
     }
 
     // TODO: remove this crap
-    addMovieToFavorite = movieId => {
-        console.log('[movieId]', movieId);
-    }
+    // addMovieToFavorite = movieId => {
+    //     console.log('[movieId]', movieId);
+    // }
 
     manageFavoriteMovie = () => {
         const { fullMovie } = this.state;

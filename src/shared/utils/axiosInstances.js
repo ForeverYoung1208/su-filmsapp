@@ -5,7 +5,8 @@ export const axiosAuth = create({
 });
 
 export const axiosDB = create({
-    baseURL: 'https://movies-app-58adf.firebaseio.com'
+    // baseURL: 'https://movies-app-58adf.firebaseio.com'
+    baseURL: 'https://filmsapp-3e0dd.firebaseio.com'
 });
 
 export const axiosMovies = create({

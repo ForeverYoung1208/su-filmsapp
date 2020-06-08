@@ -8,7 +8,8 @@ import { authenticateUser } from '../../store/actions/auth';
 import { axiosAuth, axiosDB } from '../../shared/utils/axiosInstances';
 import './Auth.scss';
 
-const FIREBASE_KEY = 'AIzaSyC3vTcNvrRtCGQAQwVF8fDuMCcwypi2feI';
+// const FIREBASE_KEY = 'AIzaSyC3vTcNvrRtCGQAQwVF8fDuMCcwypi2feI';
+const FIREBASE_KEY = 'AIzaSyAlF0fCe0MUJCEeCHN40oLADyTH7EBpyFo';
 
 const SIGN_IN = 'Sign In';
 const SIGN_UP = 'Sign Up';
